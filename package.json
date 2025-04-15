@@ -1,0 +1,22 @@
+
+{
+  "name": "producao-dashboard",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "electron": "concurrently \"npm start\" \"wait-on http://localhost:3000 && electron .\""
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "electron": "^28.1.0",
+    "wait-on": "^7.0.1"
+  }
+}
